@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CRUD</title>
+</head>
+
+<body>   
+    <div class="container-central">
+        <div class="modal-insere">
+            <span class="close-btn">X</span>
+            <h2>Insira os dados</h2>
+            <input type="text" class="nome" placeholder="nome">
+            <input type="text" class="sobrenome" placeholder="sobrenome">
+            <input type="tel" class="telefone" placeholder="tel">
+            <input type="email" class="email" placeholder="email">
+            <button type="button" class="confirma">Enviar</button>
+            <span class="textConfirma">Usuário inserido com sucesso</span>
+        </div>
+
+        <div class="modal-edita">
+            <h2>Editar dados</h2>
+            <span class="close-btn">X</span>
+            <input type="text" class="nome" placeholder="nome">
+            <input type="text" class="sobrenome" placeholder="sobrenome">
+            <input type="tel" class="telefone" placeholder="tel">
+            <input type="email" class="email" placeholder="email">
+            <button type="button" class="edita">editar</button>
+        </div>
+                
+        <div class="tabela-center">
+            <h1>Clientes</h1>
+        <span>Insira, veja, altere ou delete suas tarefas</span>
+            <button type="button" id="insere">insere aqui</button>
+
+            
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>nome</th>
+                            <th>sobrenome</th>
+                            <th>telefone</th>
+                            <th>email</th>
+                        </tr>
+                    </thead>
+                   
+                    <tbody>
+                        <!-- <tr>
+                            <td class="n">Bruce</td>
+                            <td class="s">Wayne</td>
+                            <td class="t">(99)3333-3333</td>
+                            <td class="e">btmbruce@wayneenterprise.com</td>
+                            <td>
+                                <button type="button" class="editar"> U</button>
+                                <button type="button" class="deletar"> D</button>
+                            </td>
+                        </tr> -->
+
+                    </tbody>
+                </table>
+            </div>            
+        </div>
+    </div>
+
+    <!-- Java Script -->
+    <script src="./js/back.js"></script>
+    <script src="./js/front.js"></script>
+</body>
+
+</html>
