@@ -4,6 +4,8 @@
 
     insereModal.addEventListener('click', carregaModal)
 
+
+    
     //Função para Carregar o modal de inserção na tela
     function carregaModal() {
         //container-central
@@ -34,7 +36,7 @@
     }
 
 
-    /*----------------------------------------------------------*/
+    /*----------------------EDITAR  dados modal -----------------------*/
 
     function editarModal() {
         const btnEditarDados = document.querySelector('.editar');
