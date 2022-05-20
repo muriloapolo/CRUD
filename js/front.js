@@ -1,11 +1,11 @@
     //Captura o botão de inserir
-    const insereModal = document.getElementById('insere');    
+    const insereModal = document.getElementById('insere');
     const tabela = document.querySelector('.tabela-center');
 
     insereModal.addEventListener('click', carregaModal)
 
 
-    
+
     //Função para Carregar o modal de inserção na tela
     function carregaModal() {
         //container-central
@@ -19,36 +19,43 @@
         fecharModal.addEventListener('click', () => {
             modal.classList.remove('pop-modal');
             tabela.style.display = 'flex'
+           
         })
         const btnModal = modal.querySelector('.confirma');
 
         btnModal.addEventListener('click', confirmacao);
 
         function confirmacao() {
+            editarModal()
             let confirma = modal.querySelector('.textConfirma');
-            console.log(confirma)
             confirma.style.display = 'block';
             setTimeout(() => {
                 confirma.style.display = 'none';
             }, 850);
-            editarModal()
+
+
         }
     }
 
 
     /*----------------------EDITAR  dados modal -----------------------*/
-
-    function editarModal() {
-        const btnEditarDados = document.querySelector('.editar');
-        btnEditarDados.addEventListener('click',abreModalEditar)
-
+    const configuraTela = document.querySelector('.configsAparencia');
+    console.log(configuraTela);
+    function editarModal(){
+        let botoesEditar = document.querySelectorAll('.editar');
+        console.log(botoesEditar);
+        botoesEditar.forEach((bE)=>{
+            bE.addEventListener('click',function(){
+                configuraTela.classList.add('pop-modal');
+                tabela.style.display = 'none';
+            })
+        });
+        const fecharModal = configuraTela.querySelector('.close-btn');
+        fecharModal.addEventListener('click', () => {
+            configuraTela.classList.remove('pop-modal');
+            tabela.style.display = 'flex'
+           
+        })
     }
-
-    function abreModalEditar(){
-        const modalEditar = document.querySelector('.modal-edita');
-        modalEditar.classList.add('pop-modal');
-        tabela.style.display = 'none'
-    }
-
 
     /*--------------------------------------------------------------*/

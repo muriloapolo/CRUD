@@ -68,7 +68,7 @@ td{
     top: 30px; 
     
 }
-.modal-edita{ 
+.configsAparencia{ 
     display: none; 
     position: absolute;
     align-items: center;
@@ -77,8 +77,16 @@ td{
     background-color: aliceblue;
     width:600px;
     height: 350px;    
-    top: 30px; 
+    top: 30px;  
+    padding: 20px;
     
+}
+.modal-edita{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 .pop-modal{
  display: flex;

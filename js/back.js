@@ -66,10 +66,7 @@
         e.value = '';
     }
 
-    // function gravaDados() {
-
-    //     preencheDados()
-    // }
+ 
 
 
     function preencheDados() {
@@ -111,13 +108,12 @@
             btnD.addEventListener("click", function () {
                 //Captura o indice do botão;
                 dataSet = parseInt(btnD.dataset.indexarray);
-
                 deletaCampo();
             });
         });
     }
 
-    const formEditar = document.querySelector('.modal-edita').children
+    const formEditar = document.querySelector('.modal-edita').children;
 
     let nE = formEditar[0];
     let sE = formEditar[1];
