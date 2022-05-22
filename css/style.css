@@ -65,11 +65,11 @@ td {
     justify-content: center;
     flex-direction: column;
     background-color: aliceblue;
-    width: 600px;
-    height: 350px;
+    width: 400px;
+    height: 250px;
     top: 30px;
     border-radius: 30px;
-    min-width: 320px;
+    min-width: 300px;
 
 }
 
